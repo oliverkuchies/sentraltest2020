@@ -10,7 +10,7 @@ This project was created solely for a test and serves no other purpose.
 
 3) In the dump folder you can find a dump of SQL sample data to kick off the application. Please insert these into the database.
 
-4) Once this has been completed, run composer install on the project to install PHPUnit for unit testing along with Laravel Mix for ease of JS/CSS build.
+4) Once this has been completed, run composer install on the project to install PHPUnit for unit testing.
 
 5) Afterwards, run npm install to download the latest npm files required for the project.
 
