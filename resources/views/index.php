@@ -1,0 +1,2 @@
+<div id="sentral">
+</div>

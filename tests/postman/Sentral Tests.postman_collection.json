@@ -1,0 +1,131 @@
+{
+	"info": {
+		"_postman_id": "7a6e28e2-2fa1-4488-8690-0d564902957b",
+		"name": "Sentral Tests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add Event",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Events From API",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://offline.sentral.com/api/events",
+					"protocol": "http",
+					"host": [
+						"offline",
+						"sentral",
+						"com"
+					],
+					"path": [
+						"api",
+						"events"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Event From API",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://offline.sentral.com/api/events/1",
+					"protocol": "http",
+					"host": [
+						"offline",
+						"sentral",
+						"com"
+					],
+					"path": [
+						"api",
+						"events",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Categories From API",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://offline.sentral.com/api/events/categories",
+					"protocol": "http",
+					"host": [
+						"offline",
+						"sentral",
+						"com"
+					],
+					"path": [
+						"api",
+						"events",
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get School From API",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://offline.sentral.com/api/events/schools/1",
+					"protocol": "http",
+					"host": [
+						"offline",
+						"sentral",
+						"com"
+					],
+					"path": [
+						"api",
+						"events",
+						"schools",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Schools From API",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://offline.sentral.com/api/events/schools",
+					"protocol": "http",
+					"host": [
+						"offline",
+						"sentral",
+						"com"
+					],
+					"path": [
+						"api",
+						"events",
+						"schools"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

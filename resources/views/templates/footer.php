@@ -1,0 +1,1 @@
+<script src="/assets/js/index.js" type="text/javascript"></script>

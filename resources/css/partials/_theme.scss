@@ -1,0 +1,34 @@
+#sentral{
+  min-height: 700px;
+  .public{
+    #school-logo{
+      width:100%;
+    }
+    h1{
+      font-size:25px !important;
+      text-align:center;
+    }
+    #sentral-sidebar{
+      padding: 30px;
+    }
+  }
+  #sentral-sidebar{
+    min-height:100vh;
+    background-color: #2d4d94;
+    position:relative;
+    transition: width 0.5s;
+    #links{
+      a{
+        color: white;
+        font-weight: bold;
+        display: inline-block;
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+  button, .btn{
+    font-weight:bold !important;
+  }
+}
