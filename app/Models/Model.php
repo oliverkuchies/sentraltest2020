@@ -10,9 +10,9 @@ class Model
 {
     /*This file will be an extension to other files wishing to access database data*/
     protected $servername = 'localhost';
-    protected $username = 'homestead';
-    protected $password = 'secret';
-    protected $db = 'sentral';
+    protected $username = 'olidev';
+    protected $password = 'agreatpassword';
+    protected $db = 'aa199iufbc3jpxy';
     protected $c = '';
 
     public function __construct()

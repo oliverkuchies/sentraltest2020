@@ -73,6 +73,8 @@ export default class Events extends Component {
                                             <p><b>Date & Time: </b>{moment(e.event_datetime).format('MMMM Do YYYY, h:mm:ssa')}</p>
                                             <p><b>Description: </b>{e.event_description}</p>
                                             <p><b>Location:</b> {e.location_name}</p>
+                                            <p><b>Distance from school:</b> {e.event_distance}</p>
+                                            <p><b>Travel time:</b> {e.event_travel_time}</p>
                                             <hr/>
                                             <h4>Organiser Details</h4>
                                             <p>{e.organiser_name}</p>
