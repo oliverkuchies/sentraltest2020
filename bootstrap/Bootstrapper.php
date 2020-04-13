@@ -4,13 +4,15 @@
 namespace bootstrap;
 
 use app\Loader\RouteManager\Router;
+use config\Config;
+
 class Bootstrapper
 {
 
     /**
      *  Create config necessary for app to function
      */
-    private function config(){
+    private function vars(){
         define("VIEW_FOLDER", "resources/views/");
     }
     /**
@@ -23,7 +25,7 @@ class Bootstrapper
         $router->loadRouter();
     }
     public function autoload(){
-        $this->config();
+        $this->vars();
         spl_autoload_register(function($class){
             $sources = [
                 "$class.php",
@@ -40,5 +42,6 @@ class Bootstrapper
                 }
             }
         });
+        Config::load();
     }
 }

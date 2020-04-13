@@ -3,23 +3,22 @@
 
 namespace app\Models;
 
+use config\Config;
 use PDO;
 use PDOException;
 use app\Helpers;
 class Model
 {
-    /*This file will be an extension to other files wishing to access database data*/
-    protected $servername = 'localhost';
-    protected $username = 'olidev';
-    protected $password = 'agreatpassword';
-    protected $db = 'aa199iufbc3jpxy';
-    protected $c = '';
-
+    protected $c = "";
     public function __construct()
     {
+        $db = Config::get('db');
+        $username = Config::get('username');
+        $password = Config::get('password');
+        $host = Config::get('servername');
         try {
             //Create connection for DBH.
-            $this->c = new PDO("mysql:host=$this->servername;dbname=$this->db", $this->username, $this->password);
+            $this->c = new PDO("mysql:host=$host;dbname=$db", $username, $password);
             $this->c->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         }
         catch(PDOException $e)
